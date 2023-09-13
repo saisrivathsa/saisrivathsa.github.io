@@ -25432,13 +25432,12 @@ _.a=a
 _.b=b
 _.c=c
 _.d=d},
-De:function De(a,b,c,d){var _=this
+De:function De(a,b,c){var _=this
 _.d=a
-_.e=b
-_.f=c
+_.f=b
 _.r=!1
 _.a=null
-_.b=d
+_.b=c
 _.c=null},
 ak5:function ak5(){},
 ak1:function ak1(){},
@@ -84602,7 +84601,7 @@ A.aiD.prototype={
 $3(a,b,c){return new A.tb(a.c,b)},
 $S:556}
 A.om.prototype={
-ap(){return new A.De(this.c,this.d,A.b([new A.jx("Hello, how can I help?","assistant")],t.SU),B.j)}}
+ap(){return new A.De(this.c,A.b([new A.jx("Hello, how can I help?","assistant")],t.SU),B.j)}}
 A.tC.prototype={
 hC(){return A.j(["role",this.a,"content",this.b],t.N,t.z)}}
 A.Ie.prototype={
@@ -84622,36 +84621,37 @@ afT(a){var s,r,q=A.b([],t.N0)
 for(s=this.d,r=0;r<a.length;r+=2)q.push(new A.Ie(s," test",a[r+1].b,a[r].b))
 return q},
 w8(a,b){return this.a5c(a,b)},
-a5c(a,b){var s=0,r=A.Q(t.yp),q,p=2,o,n=this,m,l,k,j,i,h,g,f,e,d,c
-var $async$w8=A.R(function(a0,a1){if(a0===1){o=a1
-s=p}while(true)switch(s){case 0:g=new A.a05(A.aA(t.Gf))
-f=""
-e=A.a2(a).i("a1<1,tC>")
-d=A.ad(new A.a1(a,new A.ak1(),e),!0,e.i("aT.E"))
+a5c(a,a0){var s=0,r=A.Q(t.yp),q,p=2,o,n=this,m,l,k,j,i,h,g,f,e,d,c,b
+var $async$w8=A.R(function(a1,a2){if(a1===1){o=a2
+s=p}while(true)switch(s){case 0:f=new A.a05(A.aA(t.Gf))
+e=""
+d=A.a2(a).i("a1<1,tC>")
+c=A.ad(new A.a1(a,new A.ak1(),d),!0,d.i("aT.E"))
 p=4
-m=n.afT(d)
-e=t.N
-i=n.d
+m=n.afT(c)
+d=n.d
+h=t.N
+l=B.bE.SS(A.j(["userId",d,"chatEntries",m,"chatRequest",A.j(["userId",d,"userEntry",a0],h,h),"summaryTillNow",$.as1],h,t.K),null)
 s=7
-return A.U(g.x_("POST",A.fN("https://ment-ally.azurewebsites.net/api/mentAlly/getTherapy",0,null),A.j(["Content-Type","application/json; charset=UTF-8","Bearer",n.e],e,e),B.bE.SS(A.j(["userId",i,"chatEntries",m,"chatRequest",A.j(["userId",i,"userEntry",b],e,e),"summaryTillNow",$.as1],e,t.K),null),null),$async$w8)
-case 7:l=a1
-if(l.b===200){e=l
-k=B.bE.Sm(0,A.aUO(A.aSr(e.e).c.a.h(0,"charset")).f4(0,e.w),null)
-f=J.e(J.aQ(k,"assistantResponse"),"")?"We are listening. We are here to be your ally. Can you let us know what kind of discomfort are you facing?":J.aQ(k,"assistantResponse")
-$.as1=J.aQ(k,"summary")}p=2
+return A.U(f.x_("POST",A.fN("https://ment-ally.azurewebsites.net/api/mentAlly/getTherapy",0,null),A.j(["Content-Type","application/json; charset=UTF-8"],h,h),l,null),$async$w8)
+case 7:k=a2
+if(k.b===200){d=k
+j=B.bE.Sm(0,A.aUO(A.aSr(d.e).c.a.h(0,"charset")).f4(0,d.w),null)
+e=J.e(J.aQ(j,"assistantResponse"),"")?"We are listening. We are here to be your ally. Can you let us know what kind of discomfort are you facing?":J.aQ(j,"assistantResponse")
+$.as1=J.aQ(j,"summary")}p=2
 s=6
 break
 case 4:p=3
-c=o
-j=A.aa(c)
-A.kD("Failed fetching API response -> "+A.i(j))
-f="Sorry we are unable to process your request at the moment"
+b=o
+i=A.aa(b)
+A.kD("Failed fetching API response -> "+A.i(i))
+e="Sorry we are unable to process your request at the moment"
 $.as1=""
 s=6
 break
 case 3:s=2
 break
-case 6:q=A.b([f,$.as1],t.s)
+case 6:q=A.b([e,$.as1],t.s)
 s=1
 break
 case 1:return A.O(q,r)
